@@ -1,0 +1,153 @@
+{
+  "settings": {
+    "name": "Taboo",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#f4f5f6",
+        "#871333"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/taboo_1.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://taboo-token-dex.github.io/\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://taboo-token-dex.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "rsuqfxxcuz",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Taboo Token™ | Official Site",
+        "meta_descr": "Content creation for TABOO Token and NFT holders - Photo shoots with Models · Listing $TABOO Token on CEX · Global Merchandise launch campaign · TABOO Grants ...",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/taboo.png\" alt=\"Taboo Token\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "u8RSEbSGWq",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#871333",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#871333"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#f4f5f6\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#f4f5f6\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Taboo Token: Redefining Adult Entertainment on the Blockchain</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  <a href=\"https://taboo-token-dex.github.io/\" class=\"text-primary\"><b>Taboo Token</b></a> is an innovative cryptocurrency project that aims to revolutionize the adult entertainment industry by leveraging the power of blockchain technology. In this article, we will explore the concept behind Taboo Token, its unique features, and the potential impact it can have on the adult entertainment sector. We will delve into the benefits it offers to content creators, consumers, and the industry as a whole, as well as the challenges it may face along the way.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>I. Understanding Taboo Token:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1.1. The Adult Entertainment Industry:<br>The adult entertainment industry has long been at the forefront of technological advancements, driving innovations in distribution, production, and consumption. However, it has also faced challenges related to piracy, lack of privacy, and limited revenue streams for content creators. Taboo Token aims to address these challenges by introducing a decentralized platform that empowers creators and consumers while ensuring privacy, security, and fair compensation.<br><br>1.2. Key Features of Taboo Token:<br>Taboo Token introduces several unique features that set it apart from traditional adult entertainment platforms:<br><br>a) Privacy and Anonymity: Taboo Token leverages the anonymity and security provided by blockchain technology to protect the privacy of both content creators and consumers. Through the use of pseudonymous addresses and encrypted transactions, users can engage with the platform without fear of their personal information being compromised.<br><br>b) Tokenization and Micropayments: Taboo Token utilizes blockchain's tokenization capabilities to enable micropayments for content consumption. This allows users to pay for individual pieces of content or services, eliminating the need for subscriptions or bundled packages. Content creators, in turn, receive fair compensation for their work, incentivizing them to produce high-quality content.<br><br>c) Smart Contracts and Royalty Distribution: Smart contracts on the Taboo Token platform ensure transparent and automatic royalty distribution. Content creators can set the terms of their contracts, specifying the percentage of revenue they receive for each transaction. This eliminates the need for intermediaries and ensures that creators are fairly compensated for their contributions.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>II. Benefits of Taboo Token:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">2.1. Empowering Content Creators:<br>Taboo Token provides content creators with a platform that enables them to take control of their work and revenue streams. By removing intermediaries, creators receive a larger share of the profits, allowing them to monetize their content effectively. The use of smart contracts ensures transparent and automatic royalty distribution, eliminating the need for complex licensing agreements.<br><br>2.2. Enhanced Privacy and Security:<br>The adult entertainment industry has often been plagued by privacy breaches and security concerns. Taboo Token addresses these issues by leveraging blockchain technology, which ensures secure and anonymous transactions. Users can engage with the platform without the fear of their personal information being exposed or compromised.<br><br>2.3. Fair Compensation and Micropayments:<br>Taboo Token introduces a new revenue model based on micropayments, allowing users to pay for individual pieces of content or services. This model benefits consumers by providing greater flexibility and choice, and creators benefit from fair compensation for their work. The elimination of subscriptions and bundled packages allows users to pay only for what they consume, resulting in a more personalized and cost-effective experience.<br><br>2.4. Combating Piracy and Copyright Infringement:<br>Blockchain technology enables the creation of a transparent and immutable ledger, making it easier to track and enforce intellectual property rights. Taboo Token's decentralized platform can help combat piracy and copyright infringement by providing a verifiable record of ownership and transactions. This provides content creators with greater control over their intellectual property and reduces the risk of unauthorized distribution.<br><br>2.5. Disintermediation and Cost Reduction:<br>By leveraging blockchain technology, Taboo Token eliminates the need for intermediaries such as payment processors and content distributors. This disintermediation reduces costs for both content creators and consumers, ensuring that a larger portion of the revenue goes directly to the creators while reducing the overall price for consumers.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>III. Challenges and Future Outlook:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">3.1. Regulatory and Legal Considerations:<br>The adult entertainment industry operates within a complex regulatory landscape. Taboo Token must navigate these legal considerations to ensure compliance and avoid potential obstacles. Engaging with regulatory bodies and seeking legal guidance will be crucial for the project's long-term success.<br><br>3.2. Adoption and User Base:<br>The success of Taboo Token relies on attracting a significant user base, including both content creators and consumers. Overcoming the stigma associated with adult content and convincing users to embrace a new platform can present challenges. Strategic marketing efforts, partnerships, and user education will play a crucial role in driving adoption.<br><br>3.3. Scalability and Technological Infrastructure:<br>As with any blockchain-based project, scalability and technological infrastructure are key considerations. Taboo Token must ensure that its platform can handle a large volume of transactions and provide a seamless user experience. Continual development and optimization of the underlying technology will be essential for scalability and long-term sustainability.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion:</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Taboo Token represents a groundbreaking approach to the adult entertainment industry, leveraging the power of blockchain technology to redefine content consumptionand revenue distribution. By prioritizing privacy, security, and fair compensation, Taboo Token empowers content creators while providing consumers with a personalized and cost-effective experience. Through the use of tokenization, micropayments, and smart contracts, the platform offers a transparent and efficient ecosystem that benefits all participants.<br><br>While Taboo Token faces challenges related to regulatory compliance, user adoption, and technological scalability, its potential impact on the adult entertainment industry is significant. By combatting piracy, ensuring fair compensation, and enhancing privacy, Taboo Token has the potential to reshape the industry and create a more sustainable and inclusive environment for content creators and consumers alike. As the project continues to evolve and overcome these challenges, it has the opportunity to revolutionize the adult entertainment sector and set new standards for innovation and transparency.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "u8RSEVkExd",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
